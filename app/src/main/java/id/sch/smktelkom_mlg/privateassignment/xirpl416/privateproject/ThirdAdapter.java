@@ -1,6 +1,7 @@
 package id.sch.smktelkom_mlg.privateassignment.xirpl416.privateproject;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 
@@ -33,7 +35,7 @@ public class ThirdAdapter extends RecyclerView.Adapter<ThirdAdapter.ViewHolder> 
     }
 
     @Override
-    public void onBindViewHolder(ViewHolder holder, int position) {
+    public void onBindViewHolder(ViewHolder holder, final int position) {
         final ThirdListItem thirdListItems = thirdListItem.get(position);
         holder.textViewTitle3.setText(thirdListItems.getTitle());
         holder.textViewContent3.setText(thirdListItems.getContent());
@@ -42,6 +44,17 @@ public class ThirdAdapter extends RecyclerView.Adapter<ThirdAdapter.ViewHolder> 
                 .with(context)
                 .load("http://image.tmdb.org/t/p/w500" + thirdListItems.getImageUrl())
                 .into(holder.imageViewOtOf3);
+
+        holder.linearLayout3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(context, thirdListItems.getTitle() + " selected", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(context, ThirdDetilPage.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                intent.putExtra("blog_id", position);
+                context.startActivity(intent);
+            }
+        });
     }
 
     @Override

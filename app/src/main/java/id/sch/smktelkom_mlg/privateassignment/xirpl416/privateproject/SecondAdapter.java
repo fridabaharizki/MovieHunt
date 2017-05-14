@@ -1,6 +1,7 @@
 package id.sch.smktelkom_mlg.privateassignment.xirpl416.privateproject;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 
@@ -33,7 +35,7 @@ public class SecondAdapter extends RecyclerView.Adapter<SecondAdapter.ViewHolder
     }
 
     @Override
-    public void onBindViewHolder(ViewHolder holder, int position) {
+    public void onBindViewHolder(ViewHolder holder, final int position) {
         final SecondListItem secondListItems = secondListItem.get(position);
         holder.textViewTitle2.setText(secondListItems.getTitle());
         holder.textViewContent2.setText(secondListItems.getContent());
@@ -42,6 +44,17 @@ public class SecondAdapter extends RecyclerView.Adapter<SecondAdapter.ViewHolder
                 .with(context)
                 .load("http://image.tmdb.org/t/p/w500" + secondListItems.getImageUrl())
                 .into(holder.imageViewOtOf2);
+
+        holder.linearLayout2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(context, secondListItems.getTitle() + " selected", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(context, SecondDetilPage.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                intent.putExtra("blog_id", position);
+                context.startActivity(intent);
+            }
+        });
     }
 
     @Override
