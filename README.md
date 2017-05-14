@@ -5,10 +5,17 @@ https://drive.google.com/a/smktelkom-mlg.sch.id/file/d/0B-L5pZMtb_ElbWlURUwxMjlO
 
 #### Identitas Siswa:
 Nama  : Frida Baharizki
+
 Kelas : XI RPL 4 / 16
+
 NIS   : 4716/1435.070
+
 Angkatan 24
+
 SMK Telkom Malang
+
+#### Alamat API
+https://www.themoviedb.org/documentation/api
 
 #### Navigasi yang Digunakan
 Action Bar Tabs
