@@ -24,11 +24,7 @@ Mempermudah pengguna untuk mengetahui film yang tayang menurut kategorinya (Now 
 
 #### Screenshot Aplikasi
 
-![screenshot_1494773257](https://cloud.githubusercontent.com/assets/22098189/26035231/4cb8a68a-38f3-11e7-9810-fc9ad55444eb.png)
-![screenshot_1494773078](https://cloud.githubusercontent.com/assets/22098189/26035229/4caeac84-38f3-11e7-9f73-2f3050a4f83b.png)
-![screenshot_1494773268](https://cloud.githubusercontent.com/assets/22098189/26035428/03f456da-38f6-11e7-97c1-15f7530aa0bf.png)
-
-![screenshot_1494773275](https://cloud.githubusercontent.com/assets/22098189/26035228/4c8bc822-38f3-11e7-9a90-385e0a8cee47.png)
-![screenshot_1494773350](https://cloud.githubusercontent.com/assets/22098189/26035227/4c889e5e-38f3-11e7-9f86-b08ca8cdf905.png)
+<img src="https://cloud.githubusercontent.com/assets/22098189/26035231/4cb8a68a-38f3-11e7-9810-fc9ad55444eb.png" width="280"> <img src="https://cloud.githubusercontent.com/assets/22098189/26035229/4caeac84-38f3-11e7-9f73-2f3050a4f83b.png" width="280"> <img src="https://cloud.githubusercontent.com/assets/22098189/26035428/03f456da-38f6-11e7-97c1-15f7530aa0bf.png" width="280">
+<img src="https://cloud.githubusercontent.com/assets/22098189/26035228/4c8bc822-38f3-11e7-9a90-385e0a8cee47.png" width="300"> <img src="https://cloud.githubusercontent.com/assets/22098189/26035227/4c889e5e-38f3-11e7-9f86-b08ca8cdf905.png" width="300">
 
 
