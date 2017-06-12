@@ -67,7 +67,7 @@ public class ThirdFragment extends Fragment {
         StringRequest stringRequest = new StringRequest(Request.Method.GET, URL_DATA, new Response.Listener<String>() {
             @Override
             public void onResponse(String s) {
-                progressDialog.dismiss(); //menghilangkan loading saat data sdh diget
+                progressDialog.dismiss(); //menghilangkan loading saat data udah diget
                 try {
                     JSONObject jsonObject = new JSONObject(s);
 

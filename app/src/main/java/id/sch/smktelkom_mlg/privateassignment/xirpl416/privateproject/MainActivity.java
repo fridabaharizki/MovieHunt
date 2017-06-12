@@ -123,14 +123,16 @@ public class MainActivity extends AppCompatActivity {
                 return new SecondFragment();
             else if (position == 2)
                 return new ThirdFragment();
+            else if (position == 3)
+                return new LocalFragment();
             else
                 return PlaceholderFragment.newInstance(position + 1);
         }
 
         @Override
         public int getCount() {
-            // Show 3 total pages.
-            return 3;
+            // Show 4 total pages.
+            return 4;
         }
 
         @Override
@@ -142,6 +144,8 @@ public class MainActivity extends AppCompatActivity {
                     return "RECOMENDATION";
                 case 2:
                     return "COMING SOON";
+                case 3:
+                    return "SAVED";
             }
             return null;
         }
